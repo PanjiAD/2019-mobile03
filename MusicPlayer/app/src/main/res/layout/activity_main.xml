@@ -28,6 +28,7 @@
         android:src="@drawable/current_song_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/songTitle"
         app:layout_constraintTop_toBottomOf="@id/menu" />
 
     <ImageView
@@ -59,7 +60,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintTop_toBottomOf="@id/currentSong" />
+        app:layout_constraintTop_toBottomOf="@id/currentSong"
+        app:layout_constraintBottom_toTopOf="@id/artist"/>
 
     <TextView
         android:id="@+id/artist"
@@ -72,7 +74,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintTop_toBottomOf="@id/songTitle"/>
+        app:layout_constraintTop_toBottomOf="@id/songTitle"
+        app:layout_constraintBottom_toTopOf="@id/wave"/>
 
     <ImageView
         android:id="@+id/wave"
@@ -111,7 +114,7 @@
         app:layout_constraintHorizontal_bias="0.35"/>
 
     <ImageButton
-        android:id="@+id/fast"
+        android:id="@+id/revind"
         android:layout_width="25dp"
         android:layout_height="30dp"
         android:src="@drawable/revind"
